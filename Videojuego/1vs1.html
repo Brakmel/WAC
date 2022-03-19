@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTA Combat</title>
+    <link rel = "stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="Player1vs2">
+            <strong>Player 1</strong>
+            <button onclick="seleccionar_sacerdote_p1();">Seleccionar Sacerdote</button>
+            <button onclick="seleccionar_picaro_p1();">Seleccionar Picaro</button>
+            <button onclick="seleccionar_guerrero_p1();">Seleccionar Guerrero</button><br><br>
+            <strong>Player 2</strong>
+            <button onclick="seleccionar_sacerdote_p2();">Seleccionar Sacerdote</button>
+            <button onclick="seleccionar_picaro_p2();">Seleccionar Picaro</button>
+            <button onclick="seleccionar_guerrero_p2();">Seleccionar Guerrero</button>
+        </div>
+        <div class="header_centro"> 
+            <div class="header">
+                <h1>Welcome to the Arena</h1>
+                <p>Bienvenid@s deidades, cada deidad tendra 2 movimientos por adalid, no se puede repetir la misma habilidad, 
+                    recuerden respetar los turnos y las reglas, selecciona tu equipo y lucha deidad,
+                     el juego acaba cuando ambos adalid llegan a numeros negativos, 
+                    ¡Lucha con honor!</p>
+            </div>
+        </div>
+        <div class="Player3y4">
+            <strong>Player 3</strong>
+            <button onclick="seleccionar_sacerdote_p3();">Seleccionar Sacerdote</button>
+            <button onclick="seleccionar_picaro_p3();">Seleccionar Picaro</button>
+            <button onclick="seleccionar_guerrero_p3();">Seleccionar Guerrero</button><br><br>
+            <strong>Player 4</strong>
+            <button onclick="seleccionar_sacerdote_p4();">Seleccionar Sacerdote</button>
+            <button onclick="seleccionar_picaro_p4();">Seleccionar Picaro</button>
+            <button onclick="seleccionar_guerrero_p4();">Seleccionar Guerrero</button>
+        </div>
+    </header>
+    <br>
+    <main>
+        <section class="Tablero_margin">
+            <div class="margin_control">
+                <strong>Player 1 HP</strong>
+                <div id="vida_p1">     
+                </div>
+                <br>
+                <img src="" id="imagen_atk1_p1">
+                <button id="boton_atk1_p1" onclick="boton_atk1_p1();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p1">
+                <button id="boton_atk2_p1" onclick="boton_atk2_p1();"></button>   
+            </div>
+            <div class="margin_control2">
+                <strong>Player 2 HP</strong>
+                <div id="vida_p2">
+                </div><br>
+                <img src="" id="imagen_atk1_p2">
+                <button id="boton_atk1_p2" onclick="boton_atk1_p2();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p2">
+                <button id="boton_atk2_p2" onclick="boton_atk2_p2();"></button>
+             </div>
+            <div class="Tablero">  
+                <section class="carousel"> 
+                    <div class="Picaro" id="r_player_1">
+                    </div>
+                </section>
+                <section class="carousel"> 
+                        <div class="Sacerdote" id="r_player_2">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="margin_control">
+                <strong>Player 3 HP</strong>
+                <div id="vida_p3">     
+                </div>
+                <br>
+                <img src="" id="imagen_atk1_p3">
+                <button id="boton_atk1_p3" onclick="boton_atk1_p3();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p3">
+                <button id="boton_atk2_p3" onclick="boton_atk2_p3();"></button>   
+            </div>
+            <div class="margin_control2">
+                <strong>Player 4 HP</strong>
+                <div id="vida_p4">
+                </div><br>
+                <img src="" id="imagen_atk1_p4">
+                <button id="boton_atk1_p4" onclick="boton_atk1_p4();"></button>
+                <br>
+                <img src="" id="imagen_atk2_p4">
+                <button id="boton_atk2_p4" onclick="boton_atk2_p4();"></button>
+             </div>
+        </section>
+    </main>
+    <div class="Ganador_ranking">
+        <div id="Ganador">
+            <a hreft="modificarpuntaje.php">Ganador</a>
+        </div>
+    </div>
+    <footer><div class="volver"><a href="">Regresa</a></div></footer>
+    <script src="js.js"></script>
+</body>
+</html>
